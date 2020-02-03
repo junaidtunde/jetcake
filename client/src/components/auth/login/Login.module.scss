@@ -1,0 +1,32 @@
+@import './../../../assets/variable.scss';
+
+.right_bg {
+    background-image: url('/img/images/login.svg');
+    background-size: 25rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.contain {
+    padding-left: 5em;
+    padding-right: 5em;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .card {
+        width: 100%;
+        box-shadow: 0px 1px 20px 0.2rem #f1f1f1;
+        border: none;
+    }
+}

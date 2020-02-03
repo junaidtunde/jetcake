@@ -1,0 +1,100 @@
+@import './../../assets/variable.scss';
+
+.home {
+  padding-top: 50px;
+
+  &_content {
+    color: white;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    background-image: url('/img/images/jcbg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include mobile {
+      text-align: center;
+    }
+
+    h2 {
+      width: 40%;
+      font-weight: lighter;
+      font-size: 40px;
+
+      @include mobile {
+        width: 100%;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.mid_section {
+  .centre_content {
+    padding-top: 3.5em;
+    padding-bottom: 4em;
+
+    @include mobile {
+      padding-top: 3.5em;
+      padding-bottom: 2.5em;
+    }
+  }
+
+  .video_container {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10em;
+
+    @include mobile {
+      margin-bottom: 1em;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .right_text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .flex_contents {
+      color: #3F4042;
+
+      h3 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        font-size: 36px;
+        margin-bottom: 2px;
+      }
+
+      .flex_para {
+        color: #959697;
+        margin-top: 1rem;
+        font-weight: lighter;
+      }
+
+      .last_hr {
+        margin-top: 1.5em;
+
+        @include mobile {
+          margin-bottom: 3em;
+        }
+      }
+    }
+  }
+
+  .hor_rule {
+    border: none;
+    height: 1px;
+    color: #959697;
+    background-color: #959697;
+    margin: 0px auto;
+    padding: 0px auto;
+    width: 25px;
+    float: left;
+  }
+}

@@ -1,0 +1,14 @@
+$color-primary: #007DB8;
+$color-secondary: #00B2E0;
+
+@mixin mobile {
+    @media (max-width: 568px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 780px) {
+        @content;
+    }
+}

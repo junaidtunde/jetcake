@@ -1,0 +1,27 @@
+@import './../../assets/variable.scss';
+
+.navbar {
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 0.2rem 1rem;
+  background-color: $color-primary;
+  display: flex;
+  justify-content: center;
+  color: white;
+
+  .navbar_brand {
+    padding-left: 75px;
+
+    @include mobile {
+      padding-left: 0px;
+    }
+  }
+
+  .nav_icon {
+    height: 45px;
+  }
+
+  span {
+    height: 27px;
+    align-items: center;
+  }
+}

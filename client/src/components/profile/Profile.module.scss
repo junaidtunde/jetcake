@@ -1,0 +1,106 @@
+@import "../../assets/variable.scss";
+
+.profile {
+  padding-top: 70px;
+  height: 130vh;
+  display: flex;
+  align-items: center;
+
+  .profile_card {
+    border-radius: 4px;
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    box-shadow: 0px 2px 2px #00000020;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include mobile {
+      overflow: scroll;
+      height: 110vh;
+    }
+
+    .profile_img {
+      flex: 0 1 60%;
+      border-radius: 4px;
+      height: 100%;
+
+      @include mobile {
+        flex: 1 0 100%;
+        height: 40%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .profile_details {
+      flex: 0 1 40%;
+      padding: 10px 30px;
+
+      @include mobile {
+        flex: 1 0 100%;
+      }
+
+      .edit_btn_flex {
+        display: flex;
+        justify-content: flex-end;
+
+        @include mobile {
+          margin-top: 12px;
+          justify-content: flex-start;
+        }
+
+        .edit_btn {
+          background-color: $color-primary;
+          font-size: 12px;
+        }
+      }
+
+      .profile_intro {
+        font-size: 13px;
+      }
+
+      .profile_header {
+        font-size: 14px;
+        color: grey;
+      }
+
+      p {
+        margin-top: 14px;
+      }
+
+      p>i {
+        color: $color-secondary;
+        margin-right: 20px;
+        font-size: 18px;
+      }
+
+      p>span {
+        font-size: 12px;
+      }
+    }
+  }
+
+}
+
+.loader_spins {
+  margin-right: 1em;
+}
+
+.loading_box {
+  padding: 1em;
+  border: 1px solid whitesmoke;
+  border-radius: 4px;
+  margin: 5px 0px;
+  width: 25%;
+  text-align: center;
+}
+
+.uploaded_img {
+  border-radius: 4px;
+  margin: 5px 0px;
+  width: 25%;
+}

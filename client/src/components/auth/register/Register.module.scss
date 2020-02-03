@@ -1,0 +1,51 @@
+@import './../../../assets/variable.scss';
+
+.right_bg {
+    background-image: url('/img/images/register.svg');
+    background-size: 35rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 140vh;
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.contain {
+    padding-left: 5em;
+    padding-right: 5em;
+    min-height: 140vh;
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .card {
+        width: 100%;
+        box-shadow: 0px 1px 20px 0.2rem #f1f1f1;
+        border: none;
+    }
+}
+
+.loader_spins {
+    margin-right: 1em;
+}
+
+.loading_box {
+    padding: 1em;
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
+    margin: 5px 0px;
+    width: 25%;
+    text-align: center;
+}
+
+.uploaded_img {
+    border-radius: 4px;
+    margin: 5px 0px;
+    width: 25%;
+}
